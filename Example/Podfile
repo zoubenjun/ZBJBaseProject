@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ZBJBaseProject_Example' do
+  pod 'ZBJBaseProject', :path => '../'
+
+  target 'ZBJBaseProject_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
