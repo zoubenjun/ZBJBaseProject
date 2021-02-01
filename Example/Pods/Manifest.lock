@@ -1,0 +1,21 @@
+PODS:
+  - ZBJBasicKit (0.1.0)
+  - ZBJHomeKit (0.1.0)
+
+DEPENDENCIES:
+  - ZBJBasicKit (from `../`)
+  - ZBJHomeKit (from `../`)
+
+EXTERNAL SOURCES:
+  ZBJBasicKit:
+    :path: "../"
+  ZBJHomeKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZBJBasicKit: e3f4be0cf6a1c7c217a23644b481cc179b66645b
+  ZBJHomeKit: 3ea165e66a3402c75fc6cc9ce940f7beccafd90a
+
+PODFILE CHECKSUM: d3aa3dce4c38dd223ee36fa08c151140d27166cd
+
+COCOAPODS: 1.10.0

@@ -21,9 +21,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		63F097A2C07C54050EFDBCF2 /* Pods_ZBJBaseProject_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302E1544B1B979AA76CB7C04 /* Pods_ZBJBaseProject_Example.framework */; };
+		6F6A758423EBC130038D0AE0 /* Pods_ZBJBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D88B6D7254BBE77E7112DA2 /* Pods_ZBJBaseProject.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BD1332AA25A8571600ED0A6C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BD1332A925A8571600ED0A6C /* LICENSE */; };
+		BD1332B225A8573600ED0A6C /* ZBJHomeKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BD1332B125A8573600ED0A6C /* ZBJHomeKit.podspec */; };
+		BD1332BD25A8600500ED0A6C /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1332BC25A8600500ED0A6C /* NotificationService.m */; };
+		BD1332C125A8600500ED0A6C /* ZBJNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD1332B925A8600500ED0A6C /* ZBJNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +38,35 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = ZBJBaseProject;
 		};
+		BD1332BF25A8600500ED0A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD1332B825A8600500ED0A6C;
+			remoteInfo = ZBJNotificationExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD1332C525A8600500ED0A6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BD1332C125A8600500ED0A6C /* ZBJNotificationExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B4D9331482BCE728ED069C2 /* Pods_ZBJBaseProject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBJBaseProject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21D5CC5E9811A864B7F492ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		302E1544B1B979AA76CB7C04 /* Pods_ZBJBaseProject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBJBaseProject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D5CC5E9811A864B7F492ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3112E67342DCAF6EB2261010 /* Pods-ZBJBaseProject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJBaseProject_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZBJBaseProject_Tests/Pods-ZBJBaseProject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* ZBJBaseProject_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBJBaseProject_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D88B6D7254BBE77E7112DA2 /* Pods_ZBJBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBJBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* ZBJBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBJBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -64,9 +89,16 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8913F5283DA52BA60DD283D7 /* Pods-ZBJBaseProject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJBaseProject_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZBJBaseProject_Example/Pods-ZBJBaseProject_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8CD1CD85A83C8DE5A7A133E1 /* Pods-ZBJBaseProject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJBaseProject_Example.release.xcconfig"; path = "Target Support Files/Pods-ZBJBaseProject_Example/Pods-ZBJBaseProject_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9079EE1C6D6C4E92F02639B6 /* Pods-ZBJBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJBaseProject.debug.xcconfig"; path = "Target Support Files/Pods-ZBJBaseProject/Pods-ZBJBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		98D33DD3843DB975E4780691 /* Pods-ZBJBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJBaseProject.release.xcconfig"; path = "Target Support Files/Pods-ZBJBaseProject/Pods-ZBJBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		9EDBE3078825A5A42CE107DD /* Pods-ZBJBaseProject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJBaseProject_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZBJBaseProject_Tests/Pods-ZBJBaseProject_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A401060BFC5DB27424C349F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B57333F7F70C784E1370FE2D /* ZBJBaseProject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZBJBaseProject.podspec; path = ../ZBJBaseProject.podspec; sourceTree = "<group>"; };
+		B57333F7F70C784E1370FE2D /* ZBJBasicKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZBJBasicKit.podspec; path = ../ZBJBasicKit.podspec; sourceTree = "<group>"; };
+		BD1332A925A8571600ED0A6C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BD1332B125A8573600ED0A6C /* ZBJHomeKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ZBJHomeKit.podspec; path = ../ZBJHomeKit.podspec; sourceTree = "<group>"; };
+		BD1332B925A8600500ED0A6C /* ZBJNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZBJNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1332BB25A8600500ED0A6C /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		BD1332BC25A8600500ED0A6C /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		BD1332BE25A8600500ED0A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +109,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				63F097A2C07C54050EFDBCF2 /* Pods_ZBJBaseProject_Example.framework in Frameworks */,
+				6F6A758423EBC130038D0AE0 /* Pods_ZBJBaseProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +124,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD1332B625A8600500ED0A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,8 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for ZBJBaseProject */,
+				6003F593195388D20070C39A /* ZBJBaseProject */,
 				6003F5B5195388D20070C39A /* Tests */,
+				BD1332BA25A8600500ED0A6C /* ZBJNotificationExtension */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				CEE205E16129DF65A3D3B29D /* Pods */,
@@ -110,8 +150,9 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* ZBJBaseProject_Example.app */,
+				6003F58A195388D20070C39A /* ZBJBaseProject.app */,
 				6003F5AE195388D20070C39A /* ZBJBaseProject_Tests.xctest */,
+				BD1332B925A8600500ED0A6C /* ZBJNotificationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,13 +164,13 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				302E1544B1B979AA76CB7C04 /* Pods_ZBJBaseProject_Example.framework */,
 				0B4D9331482BCE728ED069C2 /* Pods_ZBJBaseProject_Tests.framework */,
+				5D88B6D7254BBE77E7112DA2 /* Pods_ZBJBaseProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for ZBJBaseProject */ = {
+		6003F593195388D20070C39A /* ZBJBaseProject */ = {
 			isa = PBXGroup;
 			children = (
 				6003F59C195388D20070C39A /* ZBJAppDelegate.h */,
@@ -141,7 +182,6 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for ZBJBaseProject";
 			path = ZBJBaseProject;
 			sourceTree = "<group>";
 		};
@@ -178,11 +218,22 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				B57333F7F70C784E1370FE2D /* ZBJBaseProject.podspec */,
+				B57333F7F70C784E1370FE2D /* ZBJBasicKit.podspec */,
+				BD1332B125A8573600ED0A6C /* ZBJHomeKit.podspec */,
 				21D5CC5E9811A864B7F492ED /* README.md */,
-				A401060BFC5DB27424C349F4 /* LICENSE */,
+				BD1332A925A8571600ED0A6C /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		BD1332BA25A8600500ED0A6C /* ZBJNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BD1332BB25A8600500ED0A6C /* NotificationService.h */,
+				BD1332BC25A8600500ED0A6C /* NotificationService.m */,
+				BD1332BE25A8600500ED0A6C /* Info.plist */,
+			);
+			path = ZBJNotificationExtension;
 			sourceTree = "<group>";
 		};
 		CEE205E16129DF65A3D3B29D /* Pods */ = {
@@ -192,31 +243,33 @@
 				8CD1CD85A83C8DE5A7A133E1 /* Pods-ZBJBaseProject_Example.release.xcconfig */,
 				3112E67342DCAF6EB2261010 /* Pods-ZBJBaseProject_Tests.debug.xcconfig */,
 				9EDBE3078825A5A42CE107DD /* Pods-ZBJBaseProject_Tests.release.xcconfig */,
+				9079EE1C6D6C4E92F02639B6 /* Pods-ZBJBaseProject.debug.xcconfig */,
+				98D33DD3843DB975E4780691 /* Pods-ZBJBaseProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* ZBJBaseProject_Example */ = {
+		6003F589195388D20070C39A /* ZBJBaseProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ZBJBaseProject_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ZBJBaseProject" */;
 			buildPhases = (
 				CAF27886B2285846D4DC8448 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				089338CC7B584420F4051AD9 /* [CP] Embed Pods Frameworks */,
+				BD1332C525A8600500ED0A6C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD1332C025A8600500ED0A6C /* PBXTargetDependency */,
 			);
-			name = ZBJBaseProject_Example;
+			name = ZBJBaseProject;
 			productName = ZBJBaseProject;
-			productReference = 6003F58A195388D20070C39A /* ZBJBaseProject_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* ZBJBaseProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* ZBJBaseProject_Tests */ = {
@@ -238,6 +291,23 @@
 			productReference = 6003F5AE195388D20070C39A /* ZBJBaseProject_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BD1332B825A8600500ED0A6C /* ZBJNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1332C225A8600500ED0A6C /* Build configuration list for PBXNativeTarget "ZBJNotificationExtension" */;
+			buildPhases = (
+				BD1332B525A8600500ED0A6C /* Sources */,
+				BD1332B625A8600500ED0A6C /* Frameworks */,
+				BD1332B725A8600500ED0A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBJNotificationExtension;
+			productName = ZBJNotificationExtension;
+			productReference = BD1332B925A8600500ED0A6C /* ZBJNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +321,10 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
+					BD1332B825A8600500ED0A6C = {
+						CreatedOnToolsVersion = 12.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "ZBJBaseProject" */;
@@ -258,6 +332,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -266,8 +341,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* ZBJBaseProject_Example */,
+				6003F589195388D20070C39A /* ZBJBaseProject */,
 				6003F5AD195388D20070C39A /* ZBJBaseProject_Tests */,
+				BD1332B825A8600500ED0A6C /* ZBJNotificationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +357,8 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				BD1332AA25A8571600ED0A6C /* LICENSE in Resources */,
+				BD1332B225A8573600ED0A6C /* ZBJHomeKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,27 +370,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		089338CC7B584420F4051AD9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
+		BD1332B725A8600500ED0A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZBJBaseProject_Example/Pods-ZBJBaseProject_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZBJBaseProject/ZBJBaseProject.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBJBaseProject.framework",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZBJBaseProject_Example/Pods-ZBJBaseProject_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
 		4FB09FDF5A03C2A7BB356B86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,7 +417,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZBJBaseProject_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZBJBaseProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,13 +445,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD1332B525A8600500ED0A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1332BD25A8600500ED0A6C /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* ZBJBaseProject_Example */;
+			target = 6003F589195388D20070C39A /* ZBJBaseProject */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		BD1332C025A8600500ED0A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD1332B825A8600500ED0A6C /* ZBJNotificationExtension */;
+			targetProxy = BD1332BF25A8600500ED0A6C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,12 +571,13 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8913F5283DA52BA60DD283D7 /* Pods-ZBJBaseProject_Example.debug.xcconfig */;
+			baseConfigurationReference = 9079EE1C6D6C4E92F02639B6 /* Pods-ZBJBaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZBJBaseProject/ZBJBaseProject-Prefix.pch";
 				INFOPLIST_FILE = "ZBJBaseProject/ZBJBaseProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,12 +588,13 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CD1CD85A83C8DE5A7A133E1 /* Pods-ZBJBaseProject_Example.release.xcconfig */;
+			baseConfigurationReference = 98D33DD3843DB975E4780691 /* Pods-ZBJBaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZBJBaseProject/ZBJBaseProject-Prefix.pch";
 				INFOPLIST_FILE = "ZBJBaseProject/ZBJBaseProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +649,83 @@
 			};
 			name = Release;
 		};
+		BD1332C325A8600500ED0A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ZBJNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ZBJBaseProject.ZBJNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD1332C425A8600500ED0A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ZBJNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ZBJBaseProject.ZBJNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ZBJBaseProject_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ZBJBaseProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -593,6 +752,15 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1332C225A8600500ED0A6C /* Build configuration list for PBXNativeTarget "ZBJNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1332C325A8600500ED0A6C /* Debug */,
+				BD1332C425A8600500ED0A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

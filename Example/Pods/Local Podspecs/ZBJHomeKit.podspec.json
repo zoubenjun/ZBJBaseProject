@@ -1,0 +1,32 @@
+{
+  "name": "ZBJHomeKit",
+  "version": "0.1.0",
+  "summary": "home kit",
+  "description": "home kit etc",
+  "homepage": "https://github.com/zoubenjun/ZBJBaseProject",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zoubenjun": "502153525@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zoubenjun/ZBJBaseProject.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ZBJHomeKit/Classes/**/*",
+  "resource_bundles": {
+    "ZBJHomeKit": [
+      "ZBJHomeKit/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "ZBJPoplar": [
+
+    ]
+  }
+}

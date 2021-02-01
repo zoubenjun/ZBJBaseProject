@@ -1,13 +1,25 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
-target 'ZBJBaseProject_Example' do
-  pod 'ZBJBaseProject', :path => '../'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/zoubenjun/ZBJPoplarRepo.git'
+
+target 'ZBJBaseProject' do
+  pod 'ZBJBasicKit', :path => '../', :inhibit_warnings => false
+  pod 'ZBJHomeKit', :path => '../', :inhibit_warnings => false
+
+  pod 'ZBJPoplar', '0.1.14'
+
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'YYModel'
+  pod 'ReactiveObjC', '~> 3.0.0'
 
   target 'ZBJBaseProject_Tests' do
     inherit! :search_paths
-
-    
   end
+  
 end
