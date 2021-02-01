@@ -8,10 +8,11 @@
 
 @import UIKit;
 #import "ZBJAppDelegate.h"
+#import "ZBJNewAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ZBJAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ZBJNewAppDelegate class]));
     }
 }

@@ -30,13 +30,23 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ZBJBasicKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ZBJBasicKit' => ['ZBJBasicKit/Assets/*.png']
-  # }
-
+  # s.source_files = 'ZBJBasicKit/Classes/**/*'
   # s.public_header_files = 'Pod/Classes/**/*.h'
+
+   s.resource_bundles = {
+     'ZBJBasicKit' => ['ZBJBasicKit/Assets/*.png']
+   }
+
+  s.subspec 'ZBJAppDelegateKit' do |sp|
+      sp.source_files = 'ZBJBasicKit/Classes/ZBJAppDelegateKit/**/*'
+      sp.public_header_files = 'ZBJBasicKit/Classes/ZBJAppDelegateKit/**/*.h'
+  end
+  
+  s.subspec 'ZBJLaunchPageGuide' do |sp|
+      sp.source_files = 'ZBJBasicKit/Classes/ZBJLaunchPageGuide/**/*'
+      sp.public_header_files = 'ZBJBasicKit/Classes/ZBJLaunchPageGuide/**/*.h'
+  end
+  
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'ZBJPoplar'
 end

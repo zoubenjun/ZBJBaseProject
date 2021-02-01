@@ -18,10 +18,26 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "ZBJBasicKit/Classes/**/*",
+  "resource_bundles": {
+    "ZBJBasicKit": [
+      "ZBJBasicKit/Assets/*.png"
+    ]
+  },
   "dependencies": {
     "ZBJPoplar": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "ZBJAppDelegateKit",
+      "source_files": "ZBJBasicKit/Classes/ZBJAppDelegateKit/**/*",
+      "public_header_files": "ZBJBasicKit/Classes/ZBJAppDelegateKit/**/*.h"
+    },
+    {
+      "name": "ZBJLaunchPageGuide",
+      "source_files": "ZBJBasicKit/Classes/ZBJLaunchPageGuide/**/*",
+      "public_header_files": "ZBJBasicKit/Classes/ZBJLaunchPageGuide/**/*.h"
+    }
+  ]
 }

@@ -1,10 +1,37 @@
 PODS:
-  - ZBJBasicKit (0.1.0)
-  - ZBJHomeKit (0.1.0)
+  - ZBJBasicKit (0.1.0):
+    - ZBJBasicKit/ZBJAppDelegateKit (= 0.1.0)
+    - ZBJBasicKit/ZBJLaunchPageGuide (= 0.1.0)
+    - ZBJPoplar
+  - ZBJBasicKit/ZBJAppDelegateKit (0.1.0):
+    - ZBJPoplar
+  - ZBJBasicKit/ZBJLaunchPageGuide (0.1.0):
+    - ZBJPoplar
+  - ZBJHomeKit (0.1.0):
+    - ZBJPoplar
+  - ZBJPoplar (0.1.14):
+    - ZBJPoplar/Category (= 0.1.14)
+    - ZBJPoplar/Macros (= 0.1.14)
+    - ZBJPoplar/Tools (= 0.1.14)
+  - ZBJPoplar/Category (0.1.14):
+    - ZBJPoplar/Category/Foundation (= 0.1.14)
+    - ZBJPoplar/Category/Kit (= 0.1.14)
+  - ZBJPoplar/Category/Foundation (0.1.14):
+    - ZBJPoplar/Macros
+  - ZBJPoplar/Category/Kit (0.1.14):
+    - ZBJPoplar/Macros
+  - ZBJPoplar/Macros (0.1.14)
+  - ZBJPoplar/Tools (0.1.14):
+    - ZBJPoplar/Macros
 
 DEPENDENCIES:
   - ZBJBasicKit (from `../`)
   - ZBJHomeKit (from `../`)
+  - ZBJPoplar (= 0.1.14)
+
+SPEC REPOS:
+  https://github.com/zoubenjun/ZBJPoplarRepo.git:
+    - ZBJPoplar
 
 EXTERNAL SOURCES:
   ZBJBasicKit:
@@ -13,9 +40,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZBJBasicKit: e3f4be0cf6a1c7c217a23644b481cc179b66645b
-  ZBJHomeKit: 3ea165e66a3402c75fc6cc9ce940f7beccafd90a
+  ZBJBasicKit: 0542bf41451df4ceb3378a26ed615eea4628d731
+  ZBJHomeKit: 64bf49c40b981bf1cb26c06cf604e3ac71cc1643
+  ZBJPoplar: 6b74dc3658fcae9948f00446679878eb7ddfeef1
 
-PODFILE CHECKSUM: d3aa3dce4c38dd223ee36fa08c151140d27166cd
+PODFILE CHECKSUM: 602ac060c9451cec6d1e311d9be24d543b0f03be
 
 COCOAPODS: 1.10.0
