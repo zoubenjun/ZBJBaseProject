@@ -5,8 +5,8 @@ platform :ios, '10.0'
 source 'https://cdn.cocoapods.org/'
 source 'https://github.com/zoubenjun/ZBJPoplarRepo.git'
 
-install! 'cocoapods', :warn_for_multiple_pod_sources => false, :deterministic_uuids => false
-
+#install! 'cocoapods', :warn_for_multiple_pod_sources => false, :deterministic_uuids => false
+install! 'cocoapods', :warn_for_multiple_pod_sources => true, :deterministic_uuids => false
 #project 'Example/ZBJBaseProject.xcodeproj'
 
 inhibit_all_warnings!
