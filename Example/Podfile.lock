@@ -1,4 +1,26 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
+  - MJExtension (3.2.4)
+  - ReactiveObjC (3.0.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - YYModel (1.0.4)
   - ZBJBasicKit (0.1.0):
     - ZBJBasicKit/ZBJAppDelegateKit (= 0.1.0)
     - ZBJBasicKit/ZBJLaunchPageGuide (= 0.1.0)
@@ -25,6 +47,12 @@ PODS:
     - ZBJPoplar/Macros
 
 DEPENDENCIES:
+  - AFNetworking
+  - Masonry
+  - MJExtension
+  - ReactiveObjC (~> 3.0.0)
+  - SDWebImage
+  - YYModel
   - ZBJBasicKit (from `../`)
   - ZBJHomeKit (from `../`)
   - ZBJPoplar (= 0.1.14)
@@ -32,6 +60,13 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/zoubenjun/ZBJPoplarRepo.git:
     - ZBJPoplar
+  trunk:
+    - AFNetworking
+    - Masonry
+    - MJExtension
+    - ReactiveObjC
+    - SDWebImage
+    - YYModel
 
 EXTERNAL SOURCES:
   ZBJBasicKit:
@@ -40,10 +75,16 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZBJBasicKit: 0542bf41451df4ceb3378a26ed615eea4628d731
   ZBJHomeKit: 64bf49c40b981bf1cb26c06cf604e3ac71cc1643
   ZBJPoplar: 6b74dc3658fcae9948f00446679878eb7ddfeef1
 
-PODFILE CHECKSUM: 602ac060c9451cec6d1e311d9be24d543b0f03be
+PODFILE CHECKSUM: 1785e4f42313b4ffcdb096831e79dc12004265fe
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
